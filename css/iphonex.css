@@ -1,0 +1,44 @@
+@media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
+  /*增加头部适配层*/
+  .has-topbar {
+    height: 100%;
+    box-sizing: border-box;
+    padding-top: 44px;
+  }
+  .has-topbar:before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 74px;
+    background-color: #5589ff;
+    z-index: 9998;
+  }
+  /*增加底部适配层*/
+  .has-bottombar {
+    height: 100%;
+    box-sizing: border-box;
+    padding-bottom: 34px;
+  }
+  .has-bottombar:after {
+    content: '';
+    z-index: 9998;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 74px;
+    background: #5589ff;
+  }
+  /*导航操作栏上移*/
+  .bottom-menu-fixed {
+    bottom: 34px;
+  }
+  body {
+    background: #5b89ff;
+  }
+  .form{
+    bottom: 6rem;
+  }
+}
